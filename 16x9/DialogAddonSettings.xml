@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window>
+<window id="10140">
     <!-- addonsettings -->
-    <defaultcontrol always="true">9</defaultcontrol>
+    <defaultcontrol always="true">3</defaultcontrol>
     <controls>
         <control type="group">
             <top>dialogtop</top>
@@ -19,7 +19,7 @@
                 <right>bigpad</right>
                 <include content="Object_Line">
                     <param name="width" value="headlinew" />
-                    <param name="label" value="$INFO[Control.GetLabel(20)]" />
+                    <param name="label" value="$INFO[Control.GetLabel(2)]" />
                 </include>
             </control>
             <control type="group">
@@ -35,7 +35,7 @@
                         <ondown>8000</ondown>
                         <onup>noop</onup>
                         <onleft>8000</onleft>
-                        <onright>2</onright>
+                        <onright>5</onright>
                         <width>100%</width>
                         <height>576</height>
                         <orientation>vertical</orientation>
@@ -53,7 +53,7 @@
                         <height>576</height>
                         <ondown>8000</ondown>
                         <onup>noop</onup>
-                        <onleft>9</onleft>
+                        <onleft>3</onleft>
                         <onright>8000</onright>
                         <orientation>vertical</orientation>
                         <itemgap>0</itemgap>
@@ -82,6 +82,14 @@
                 <texture border="30">common/div.png</texture>
                 <include>Defs_OptionButton</include>
             </control>
+        	<control type="edit" id="12">
+                <width>100%</width>
+                <include>Defs_OptionButton</include>
+            </control>
+        	<control type="sliderex" id="13">
+                <width>100%</width>
+                <include>Defs_OptionButton</include>
+            </control>
             <control type="label" id="14">
                 <width>100%</width>
                 <height>72</height>
@@ -89,16 +97,14 @@
                 <font>Font-ListInfo-Small-Bold</font>
                 <textcolor>LineLabel</textcolor>
             </control>
-            <control type="sliderex" id="13">
-                <width>100%</width>
-                <include>Defs_OptionButton</include>
-            </control>
 
             <!-- Default Templates Category -->
+            <!--
             <control type="button" id="28">
                 <width>100%</width>
                 <include>Defs_OptionButton</include>
             </control>
+        -->
 
             <!-- Ok Cancel Defaults -->
             <control type="grouplist" id="8000">
@@ -108,31 +114,29 @@
                 <height>72</height>
                 <align>center</align>
                 <itemgap>20</itemgap>
-                <onleft>9</onleft>
-                <onright>2</onright>
-                <onup>9</onup>
-                <ondown>noop</ondown>
+                <onup>3</onup>
+                <ondown>5</ondown>
                 <orientation>horizontal</orientation>
                 <control type="button" id="28">
                     <align>center</align>
                     <width>400</width>
                     <label>186</label>
                     <include>Defs_OptionButton2</include>
-                    <visible>Control.IsEnabled(10)</visible>
+                    <visible>Control.IsEnabled(28)</visible>
                 </control>
                 <control type="button" id="29">
                     <align>center</align>
                     <width>400</width>
                     <label>222</label>
                     <include>Defs_OptionButton2</include>
-                    <visible>Control.IsEnabled(11)</visible>
+                    <visible>Control.IsEnabled(29)</visible>
                 </control>
                 <control type="button" id="30">
                     <align>center</align>
                     <width>400</width>
                     <label>409</label>
                     <include>Defs_OptionButton2</include>
-                    <visible>Control.IsEnabled(12)</visible>
+                    <visible>Control.IsEnabled(30)</visible>
                 </control>
             </control>
         </control>
