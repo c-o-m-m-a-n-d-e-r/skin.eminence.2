@@ -99,12 +99,10 @@
             </control>
 
             <!-- Default Templates Category -->
-            <!--
-            <control type="button" id="28">
+            <control type="button" id="10">
                 <width>100%</width>
                 <include>Defs_OptionButton</include>
             </control>
-        -->
 
             <!-- Ok Cancel Defaults -->
             <control type="grouplist" id="8000">
